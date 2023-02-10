@@ -16,6 +16,7 @@ https://www.cancerrxgene.org/help#t_curve
 
 ## Publication
 https://www.cell.com/fulltext/S0092-8674(16)30746-2
+https://www.cell.com/cms/10.1016/j.cell.2016.06.017/attachment/156ac7ef-fc3d-4cfb-808b-0e465c850120/mmc1
 
 ## Github
 https://github.com/CancerRxGene
