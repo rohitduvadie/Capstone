@@ -16,6 +16,7 @@ We implemented a variety of techniques for this project.
 * LICENSE
 * python_requirements.txt
 * R_requirements.txt
+* Reports
 * Final
   * Data collection.ipynb
   * Data processing.ipynb
