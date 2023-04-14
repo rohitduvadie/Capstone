@@ -10,6 +10,13 @@ We implemented a variety of techniques for this project.
 
 ![Screenshot 2023-04-14 at 11 52 35 AM](https://user-images.githubusercontent.com/56646278/232093674-57f2c0de-e017-4d1c-938b-0df2ee11d605.png)
 
+## Data source
+Genomics of Drug Sensitivity in Cancer Project
+https://www.cancerrxgene.org/
+
+Direct links to data
+https://cog.sanger.ac.uk/cancerrxgene/GDSC_release8.4/GDSC1_public_raw_data_24Jul22.csv.zip
+https://cog.sanger.ac.uk/cancerrxgene/GDSC_release8.4/GDSC2_public_raw_data_24Jul22.csv.zip
 
 ## File structure
 * README.md
