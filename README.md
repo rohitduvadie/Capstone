@@ -53,22 +53,22 @@ https://cog.sanger.ac.uk/cancerrxgene/GDSC_release8.4/GDSC2_public_raw_data_24Ju
       * Images of curves made using dr4pl package
   * Model generation
     * 699_Images3_VGG16.ipynb
-      *
+      * 
     * Capstone_deep_learning_curves_images_RKD.ipynb
       * 
     * Unsupervised image classifier functions, pca and kmeans clustering code.ipynb
-      *
+      * 
   * Labeling, visualizations, and analysis
     * 699 visualisations.ipynb
-      *
+      * 
     * Labels.ipynb
-      *
+      * 
     * VGG19 visualizations.ipynb
-      *
+      * 
   * Supervised learning
     * GDSC_triplicate_batch_Supervised_ML_RKD.ipynb
-      *
+      * 
     * GDSC_triplicate_batch_Supervised_ML_RKD_Updated.ipynb
-      *
+      * 
     * Random Forest.ipynb
-      *
+      * 
