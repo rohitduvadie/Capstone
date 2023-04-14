@@ -6,7 +6,7 @@ In cancer drug discovery, researchers may work to identify promising drug candid
 ## Project
 The goal of our project is to develop an image-based machine learning algorithm that can classify the quality of dose response curves. In this way, curves with poor quality (e.g. high variability between replicate measures, random fluctuations in response that cannot be modelled easily with a curve) can be easily eliminated from further analysis, allowing scientists to focus future validation and research on those compounds that provide the most useful information. 
 
-We implemented a variety of techniques for this project.
+To generate our final results, we utilized a variety of techniques. Initial data collection and preparation was done in python using pandas. Images were generated in R using the dr4pl and ggplot2 packages. Unsupervised clustering was done using tensorflow, the keras VGG19 model, and sklearn PCA and sklearn KMeans clustering. Analysis of the clusters was performed using sklearn silhouette scoring. A supervised model was generated using sklearn Random Forest. All visualizations were made using matplotlib.
 
 ![Screenshot 2023-04-14 at 11 52 35 AM](https://user-images.githubusercontent.com/56646278/232093674-57f2c0de-e017-4d1c-938b-0df2ee11d605.png)
 
@@ -26,11 +26,17 @@ https://cog.sanger.ac.uk/cancerrxgene/GDSC_release8.4/GDSC2_public_raw_data_24Ju
 * Reports
 * Final code
   * Data collection.ipynb
+   * Import data from GDSC website
   * Data processing.ipynb
+   * Clean, normalize, and assemble triplicates
   * Image_generation.R
+   * Generate dose response curves and save as images 
   * Model generation.ipynb
+   * Train unsupervised model to cluster images
   * Labeling, visualizations, and analysis.ipynb
+   * Analyze clusters and label
   * Supervised learning.ipynb
+   * Train model to predict curve label
 * Exploratory notebooks
   * Data collection and processing
   * Image generation
