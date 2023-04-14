@@ -12,9 +12,11 @@ We implemented a variety of techniques for this project.
 
 ## Data source
 Genomics of Drug Sensitivity in Cancer Project
+
 https://www.cancerrxgene.org/
 
 Direct links to data
+
 https://cog.sanger.ac.uk/cancerrxgene/GDSC_release8.4/GDSC1_public_raw_data_24Jul22.csv.zip
 https://cog.sanger.ac.uk/cancerrxgene/GDSC_release8.4/GDSC2_public_raw_data_24Jul22.csv.zip
 
