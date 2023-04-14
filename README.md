@@ -24,6 +24,7 @@ https://cog.sanger.ac.uk/cancerrxgene/GDSC_release8.4/GDSC2_public_raw_data_24Ju
 * python_requirements.txt
 * R_requirements.txt
 * Reports
+  * Final presentation.pptx
 * Final code
   * Data collection.ipynb
     * Import data from GDSC website
