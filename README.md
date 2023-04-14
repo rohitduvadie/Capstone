@@ -35,7 +35,7 @@ https://cog.sanger.ac.uk/cancerrxgene/GDSC_release8.4/GDSC2_public_raw_data_24Ju
     * Train unsupervised model to cluster images
   * Labeling, visualizations, and analysis.ipynb
     * Analyze clusters and manually label
-  * Supervised learning.ipynb
+  * Random Forest.ipynb
     * Train supervised model to predict curve label
 * Exploratory notebooks
   * Data collection and processing
