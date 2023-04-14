@@ -28,15 +28,15 @@ https://cog.sanger.ac.uk/cancerrxgene/GDSC_release8.4/GDSC2_public_raw_data_24Ju
   * Data collection.ipynb
     * Import data from GDSC website
   * Data processing.ipynb
-    * Clean, normalize, and assemble triplicates
+    * Clean, normalize, and assemble into triplicates
   * Image_generation.R
     * Generate dose response curves and save as images 
   * Model generation.ipynb
     * Train unsupervised model to cluster images
   * Labeling, visualizations, and analysis.ipynb
-    * Analyze clusters and label
+    * Analyze clusters and manually label
   * Supervised learning.ipynb
-    * Train model to predict curve label
+    * Train supervised model to predict curve label
 * Exploratory notebooks
   * Data collection and processing
   * Image generation
