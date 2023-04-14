@@ -46,11 +46,11 @@ https://cog.sanger.ac.uk/cancerrxgene/GDSC_release8.4/GDSC2_public_raw_data_24Ju
       * Data import and processing
   * Image generation
     * Capstone_GDSC_Normalized_Curves_silmplydrug_RKD.ipynb
-      *
+      * Data processing and images of curves made using simplydrug package in python
     * Capstone_GDSC_Normalized_RKD.ipynb
       * 
     * image_generation.R
-      * Images of curves made using dr4pl package
+      * Images of curves made using dr4pl package in R
   * Model generation
     * 699_Images3_VGG16.ipynb
       * 
@@ -62,7 +62,7 @@ https://cog.sanger.ac.uk/cancerrxgene/GDSC_release8.4/GDSC2_public_raw_data_24Ju
     * 699 visualisations.ipynb
       * 
     * Labels.ipynb
-      * 
+      * Generate table with curve metrics and labels
     * VGG19 visualizations.ipynb
       * 
   * Supervised learning
@@ -71,4 +71,4 @@ https://cog.sanger.ac.uk/cancerrxgene/GDSC_release8.4/GDSC2_public_raw_data_24Ju
     * GDSC_triplicate_batch_Supervised_ML_RKD_Updated.ipynb
       * 
     * Random Forest.ipynb
-      * 
+      * Hyperparameter tuning, training, and testing of Random Forest
