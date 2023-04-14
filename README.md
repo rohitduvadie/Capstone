@@ -17,14 +17,14 @@ We implemented a variety of techniques for this project.
 * python_requirements.txt
 * R_requirements.txt
 * Reports
-* Final
+* Final code
   * Data collection.ipynb
   * Data processing.ipynb
   * Image_generation.R
   * Model generation.ipynb
   * Labeling, visualizations, and analysis.ipynb
   * Supervised learning.ipynb
-* Exploratory
+* Exploratory notebooks
   * Data collection and processing
   * Image generation
   * Model generation
