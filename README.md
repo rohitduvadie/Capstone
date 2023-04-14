@@ -12,4 +12,16 @@ We implemented a variety of techniques for this project.
 
 
 ## File structure
-
+*Final
+  *Data collection.ipynb
+  *Data processing.ipynb
+  *Image_generation.R
+  *Model generation.ipynb
+  *Labeling, visualizations, and analysis.ipynb
+  *Supervised learning.ipynb
+*Exploratory
+  *Data collection and processing
+  *Image generation
+  *Model generation
+  *Labeling, visualizations, and analysis
+  *Supervised learning
