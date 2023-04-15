@@ -105,20 +105,29 @@ Exploratory
         Unsupervised image classifier functions, pca and kmeans clustering code.ipynb 
         VGG16_notebook.ipynb 
             Input
-                **** update ****
                 ../../Final/images
             Output 
-                ../model/vgg16_feat.csv
                 ../model/vgg16_features.csv
-                ../model/vgg16_PCA100_labels40.csv
+                ../model/vgg16_filenames.csv
+                ../model/model_vgg16.pkl
+                ../model/vgg16_pca_variance.png
+                ../model/vgg16_kmeans_inertia.png
+                ../model/vgg16_kmeans{n_clusters}_v1.csv
+                ../model/vgg16_kmeans{n_clusters}_v2.csv
+                ../model/vgg16_kmeans{n_clusters}_silhouette.png
+                ../model/vgg16_kmeans{n_cluster}_cluster{cluster}.png
         VGG19_notebook.ipynb 
             Input
-                **** update ****
                 ../../Final/images
             Output 
-                ../model/vgg19_feat.csv
-                ../model/vgg19_features.csv
-                ../model/vgg19_PCA100_labels40.csv
+                ../model/vgg16_features.csv
+                ../model/vgg16_filenames.csv
+                ../model/model_vgg16.pkl
+                ../model/vgg16_pca_variance.png
+                ../model/vgg16_kmeans_inertia.png
+                ../model/vgg16_kmeans{n_clusters}.csv
+                ../model/vgg16_kmeans{n_clusters}_silhouette.png
+                ../model/vgg16_kmeans{n_cluster}_cluster{cluster}.png
     Labeling, visualizations and analysis 
         699 visualisations.ipynb 
             Input 
