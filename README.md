@@ -6,11 +6,9 @@ In cancer drug discovery, researchers may work to identify promising drug candid
 ## Project
 The goal of our project is to develop an image-based machine learning algorithm that can classify the quality of dose response curves. In this way, curves with poor quality (e.g. high variability between replicate measures, random fluctuations in response that cannot be modelled easily with a curve) can be easily eliminated from further analysis, allowing scientists to focus future validation and research on those compounds that provide the most useful information. 
 
-To generate our final results, we utilized a variety of techniques. Initial data collection and preparation was done in python using pandas. Images were generated in R using the dr4pl and ggplot2 packages. Unsupervised clustering was done using tensorflow, the keras VGG19 deep CNN, and sklearn PCA and sklearn KMeans clustering. Analysis of the clusters was performed using sklearn silhouette scoring. A supervised model was generated using sklearn Random Forest. All visualizations were made using matplotlib. In our exploratory work, we also used the simplydrug curve generation package, VGG16 deep CNN, and several supervised learning models including Decision Tree, Voting, Stacking, Extra Tree, and Ada Boost.
+To generate our final results, we utilized a variety of techniques. Initial data collection and preparation was done in python using pandas. Images were generated in R using the dr4pl and ggplot2 packages. Unsupervised clustering was done using tensorflow, the keras VGG19 model, and sklearn PCA and sklearn KMeans clustering. Analysis of the clusters was performed using sklearn silhouette scoring. A supervised model was generated using sklearn Random Forest. All visualizations were made using matplotlib.
 
 ![Screenshot 2023-04-14 at 11 52 35 AM](https://user-images.githubusercontent.com/56646278/232093674-57f2c0de-e017-4d1c-938b-0df2ee11d605.png)
-
-
 
 ## Data source
 #### Genomics of Drug Sensitivity in Cancer Project
@@ -49,28 +47,30 @@ https://cog.sanger.ac.uk/cancerrxgene/GDSC_release8.4/GDSC2_public_raw_data_24Ju
   * Image generation
     * Capstone_GDSC_Normalized_Curves_silmplydrug_RKD.ipynb
       * Data processing and images of curves made using simplydrug package in python
-    * Capstone_GDSC_Normalized_RKD.ipynb
-      * 
     * image_generation.R
       * Images of curves made using dr4pl package in R
   * Model generation
     * 699_Images3_VGG16.ipynb
-      * 
+      * Generate clusters with VGG16, PCA, and KMeans clustering using dr4pl images
     * Capstone_deep_learning_curves_images_RKD.ipynb
-      * 
+      * Generate clusters with VGG16, PCA, and KMeans clustering using simplydrug images
     * Unsupervised image classifier functions, pca and kmeans clustering code.ipynb
-      * 
+      * Clean code to generate clusters with VGG model, PCA, and KMeans clustering using dr4pl images
+    * VGG19_notebook
+      * Generate clusters with VGG19, PCA, and KMeans clustering using dr4pl images to compare directly with VGG16_notebook
+    * VGG16_notebook
+      * Generate clusters with VGG16, PCA, and KMeans clustering using dr4pl images to compare directly with VGG19_notebook
   * Labeling, visualizations, and analysis
     * 699 visualisations.ipynb
-      * 
+      * 2D and 3D PCA plots with clusters
     * Labels.ipynb
       * Generate table with curve metrics and labels
     * VGG19 visualizations.ipynb
-      * 
+      * 2D and 3D PCA plots with labels
   * Supervised learning
     * GDSC_triplicate_batch_Supervised_ML_RKD.ipynb
-      * 
+      * Feature selection, hyperparameter tuning, linear regression, logistic regression, decision tree, confusion matrix, voting, bagging, gradient boosting, stacking, linear svc, k-neighbors, and ada boost
     * GDSC_triplicate_batch_Supervised_ML_RKD_Updated.ipynb
-      * 
+      * Hyperparameter tuning, decison tree, voting, bagging, gradient boosting, stacking, logistic regression, SGD, SVC, k-neighbors, extra trees, ada boost
     * Random Forest.ipynb
-      * Hyperparameter tuning, training, and testing of Random Forest
+      * Hyperparameter tuning, Random Forest, confusion matrix, and feature importance
