@@ -64,8 +64,8 @@ Final
 
 Exploratory 
     Data collection and processing 
-        Capstone triplicates playground.ipynb 
-            Output 
+        Capstone triplicates playground.ipynb
+            **** update ****
         Data processing – triplicates.ipynb 
             Output 
                 ../data/gdsc.csv 
@@ -75,34 +75,50 @@ Exploratory
                 ../data/all_triplicates.csv 
     Image generation 
         Capstone_GDSC_Normalized_Curves_silmplydrug_RKD.ipynb 
-            Input 
-            Output 
+            Input
+                **** update ****
+                ../data/gdsc_triplicates.csv
+            Output
+                ../images_python/gdsc_nomalized_curve_fit_output/{name}_GDSC_fit.png
+                ../data/gdsc_nomalized_curve_fit_output/fitTable.csv
         image_generation.R 
             Input 
                 ../data/gdsc_triplicates.csv 
             Output 
                 ../images/image_{n}.jpg 
-                ../data/triplicate_images.csv 
-        Image generation.ipynb 
-            Input 
-            Output 
+                ../data/triplicate_images.csv  
     Model generation 
         699_Images3_VGG16.ipynb 
             Input 
+                **** update ****
                 ../images/image_{n}.jpg 
             Output 
+                **** update ****
+                ../model/VGG16_filenames_file.csv
+                ../model/VGG16_features_file.csv
         Capstone_deep_learning_curves_images_RKD.ipynb 
             Input 
+                **** update ****
+                ../images_python/gdsc_nomalized_curve_fit_output/{name}_GDSC_fit.png
             Output 
+                **** udpate ****
         Unsupervised image classifier functions, pca and kmeans clustering code.ipynb 
-            Input 
-            Output 
         VGG16_notebook.ipynb 
-            Input 
+            Input
+                **** update ****
+                ../../Final/images
             Output 
+                ../model/vgg16_feat.csv
+                ../model/vgg16_features.csv
+                ../model/vgg16_PCA100_labels40.csv
         VGG19_notebook.ipynb 
-            Input 
+            Input
+                **** update ****
+                ../../Final/images
             Output 
+                ../model/vgg19_feat.csv
+                ../model/vgg19_features.csv
+                ../model/vgg19_PCA100_labels40.csv
     Labeling, visualizations and analysis 
         699 visualisations.ipynb 
             Input 
