@@ -1,3 +1,5 @@
+** List of input and output for each python notebook or R script **
+
 Final 
     Data collection.ipynb 
         Output 
@@ -45,7 +47,8 @@ Final
         Input 
             User generated ratings dictionary 
                 dict = {cluster_number:’rating’, cluster_number:’rating’, …} 
-            data/triplicates_curve_images.csv  
+            **** update ****
+            data/triplicates_batch_images.csv  
             model/{model_name}_kmeans{n_clusters}.csv 
             model/{model_name}_pca_features.csv 
             data/images_list.csv 
@@ -131,19 +134,36 @@ Exploratory
     Labeling, visualizations and analysis 
         699 visualisations.ipynb 
             Input 
-            Output 
+                **** update ****
+                vgg19_pca.csv
+                triplicate_batch_images_labels_updated.csv
+                vgg19_kmeans_labels.csv
         Labels.ipynb 
             Input 
+                **** update ****
+                ../../Final/analysis/VGG19_kmeans40_ratings.csv
+                ../../Final/data/triplicate_batch_images.csv
             Output 
+                **** update ****
+                ../analysis/triplicate_batch_images_labels_updated.csv                
         VGG19 visualisations.ipynb 
+                **** update ****
             Input 
+                vgg19_kmeans20.csv
+                vgg19_kmeans30.csv
+                vgg19_kmeans40.csv
+                vgg19_kmeans50.csv                
+                /home/freemal4/Capstone/VGG19/vgg19_pca_features.csv'
             Output 
+                kmeans{n_clusters}_ratings_clusters_3D.pngkmeans{n_clusters}_ratings_clusters_3D.png
     Supervised learning 
         GDSC_triplicate_batch_Supervised_ML_RKD.ipynb 
             Input 
+                ../analysis/triplicate_batch_images_labels_updated.csv
             Output 
         GDSC_triplicate_batch_Supervised_ML_RKD_Updated.ipynb 
             Input 
+                ../analysis/triplicate_batch_images_labels_updated.csv
             Output 
         Random Forest.ipynb 
             Input 
