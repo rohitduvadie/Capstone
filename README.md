@@ -6,11 +6,11 @@ In cancer drug discovery, researchers may work to identify promising drug candid
 ## Project
 The goal of our project is to develop an image-based machine learning algorithm that can classify the quality of dose response curves. In this way, curves with poor quality (e.g. high variability between replicate measures, random fluctuations in response that cannot be modelled easily with a curve) can be easily eliminated from further analysis, allowing scientists to focus future validation and research on those compounds that provide the most useful information. 
 
-To generate our final results, we utilized a variety of techniques. Initial data collection and preparation was done in python using pandas. Images were generated in R using the dr4pl and ggplot2 packages. Unsupervised clustering was done using tensorflow, the keras VGG19 deep CNN, and sklearn PCA and sklearn KMeans clustering. Analysis of the clusters was performed using sklearn silhouette scoring. A supervised model was generated using sklearn Random Forest. All visualizations were made using matplotlib.
+To generate our final results, we utilized a variety of techniques. Initial data collection and preparation was done in python using pandas. Images were generated in R using the dr4pl and ggplot2 packages. Unsupervised clustering was done using tensorflow, the keras VGG19 deep CNN, and sklearn PCA and sklearn KMeans clustering. Analysis of the clusters was performed using sklearn silhouette scoring. A supervised model was generated using sklearn Random Forest. All visualizations were made using matplotlib. In our exploratory work, we also used the simplydrug curve generation package, VGG16 deep CNN, and several supervised learning models including Decision Tree, Voting, Stacking, Extra Tree, and Ada Boost.
 
 ![Screenshot 2023-04-14 at 11 52 35 AM](https://user-images.githubusercontent.com/56646278/232093674-57f2c0de-e017-4d1c-938b-0df2ee11d605.png)
 
-In our exploratory work, we also used the VGG16 model, simplydrug curve generation package, and several supervised learning models including Decision Tree, Voting, Stacking, Extra Tree, and Ada Boost.
+
 
 ## Data source
 #### Genomics of Drug Sensitivity in Cancer Project
