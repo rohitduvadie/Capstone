@@ -19,9 +19,11 @@ https://cog.sanger.ac.uk/cancerrxgene/GDSC_release8.4/GDSC1_public_raw_data_24Ju
 https://cog.sanger.ac.uk/cancerrxgene/GDSC_release8.4/GDSC2_public_raw_data_24Jul22.csv.zip
 
 ## How to use this repository
-Jupyter notebooks and R code can be found in the "Final" folder. Run in the following order to complete the project from start to finish: Data collection; Data processing; Image generation; Model generation; Labeling, visualizations, and analysis; Supervised learning.
+Jupyter notebooks and R code can be found in the "Final" folder. Run in the following order to complete the project from start to finish: Data collection; Data processing; Image generation; Model generation; Labeling, visualizations, and analysis; Supervised learning. An brief explantation of each notebook can be found under "Directory" below. See "Code input and outputs.txt" for a full list of required input and generated output for all code. For the "Final/Labeling, visualizations, and analysis" notebook, users will manually label the clusters according to quality of the curves within. 
 
-If using another dataset other than GDSC, deposit input file into "data" directory. The necessary columns are DRUGSET_ID (plate ID), CELL_ID (cell line ID), DRUG_ID (compound ID), TAG (compound annotation), ASSAY (type of readout), DURATION (length of experiment), SEEDING_DENSITY (number of cells plated at beginning of experiment), CONC (concentration of compound), and INTENSITY (readout of experiment). Data must be at least in triplicates.
+If using another dataset other than GDSC, deposit input file into "data" directory. The necessary columns are DRUGSET_ID (plate ID), CELL_ID (cell line ID), DRUG_ID (compound ID), TAG (compound annotation), ASSAY (type of readout), DURATION (length of experiment), SEEDING_DENSITY (number of cells plated at beginning of experiment), CONC (concentration of compound), and INTENSITY (readout of experiment). Data must be at least in triplicates. Code can be run starting at the "Final/Data processing" notebook.
+
+Further exploratory notebooks can be found in the Exploratory folder. 
 
 ## Directory
 * README.md
