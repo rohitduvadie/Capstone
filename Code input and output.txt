@@ -105,6 +105,7 @@ Exploratory
                 ../images_python/gdsc_nomalized_curve_fit_output/{name}_GDSC_fit.png
             Output 
                 **** udpate ****
+                ../images_python/gdsc_normalized_curve_fit_images.pkl
         Unsupervised image classifier functions, pca and kmeans clustering code.ipynb 
         VGG16_notebook.ipynb 
             Input
