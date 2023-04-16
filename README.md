@@ -25,13 +25,12 @@ The format of the project is Jupyter Notebooks with the exception of one R scrip
 
 If using another dataset other than GDSC, deposit input file into "data" directory located in the same directory as the notebooks to be run. The necessary columns are DRUGSET_ID (plate ID), CELL_ID (cell line ID), DRUG_ID (compound ID), TAG (compound annotation), ASSAY (type of readout), DURATION (length of experiment), SEEDING_DENSITY (number of cells plated at beginning of experiment), CONC (concentration of compound), and INTENSITY (readout of experiment). Data must be at least in triplicates. Code can be run starting at the "Final/Data processing" notebook.
 
-Further exploratory notebooks can be found in the Exploratory folder. 
+Additional notebooks can be found in the Exploratory folder. These include exploratory work into different curve generation in python and R, optimization of VGG CNN models, and training and testing of multiple supervised learning approaches. 
 
 ## Directory
 * README.md
 * LICENSE
-* python_requirements.txt
-* R_requirements.txt
+* requirements.txt
 * Code input and output.txt
 * Reports
   * Final presentation.pptx
