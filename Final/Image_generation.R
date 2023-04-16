@@ -6,6 +6,9 @@ library(ggplot2)
 if (!dir.exists('curve_images')) {dir.create(file.path(getwd(),'curve_images'))}
 if (!dir.exists('data')) {dir.create(file.path(getwd(),'data'))}
 
+# read in the data
+triplicates_df <- read.csv('data/triplicates_normalized.csv')
+
 # make a new dataframe to save metrics
 gdsc_df = data.frame(matrix(nrow=0, ncol=14))
 colnames(gdsc_df) <- c('cell','drug','min_conc','max_conc','min_norm_intensity','max_norm_intensity',
