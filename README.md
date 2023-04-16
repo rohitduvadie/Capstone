@@ -23,7 +23,7 @@ Jupyter notebooks and R code can be found in the "Final" folder. Run in the foll
 
 The format of the project is Jupyter Notebooks with the exception of one R script. This format provides the most flexibility to users. If using this project as a framework to analyze another raw data source, there are multiple parameters that can be optimized as well as the manually labeling clusters. These parameters include number of features for PCA, number of clusters for k-means clustering, and hyperparameter tuning for supervised learning.
 
-If using another dataset other than GDSC, deposit input file into "data" directory. The necessary columns are DRUGSET_ID (plate ID), CELL_ID (cell line ID), DRUG_ID (compound ID), TAG (compound annotation), ASSAY (type of readout), DURATION (length of experiment), SEEDING_DENSITY (number of cells plated at beginning of experiment), CONC (concentration of compound), and INTENSITY (readout of experiment). Data must be at least in triplicates. Code can be run starting at the "Final/Data processing" notebook.
+If using another dataset other than GDSC, deposit input file into "data" directory located in the same directory as the notebooks to be run. The necessary columns are DRUGSET_ID (plate ID), CELL_ID (cell line ID), DRUG_ID (compound ID), TAG (compound annotation), ASSAY (type of readout), DURATION (length of experiment), SEEDING_DENSITY (number of cells plated at beginning of experiment), CONC (concentration of compound), and INTENSITY (readout of experiment). Data must be at least in triplicates. Code can be run starting at the "Final/Data processing" notebook.
 
 Further exploratory notebooks can be found in the Exploratory folder. 
 
