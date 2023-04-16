@@ -45,7 +45,7 @@ Additional notebooks can be found in the Exploratory folder. These include explo
     * Train unsupervised model to cluster images
   * Labeling, visualizations, and analysis.ipynb
     * Analyze clusters and manually label
-  * Random Forest.ipynb
+  * Supervised learning.ipynb
     * Train supervised model to predict curve label
 * Exploratory notebooks
   * Data collection and processing
