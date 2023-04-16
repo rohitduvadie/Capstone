@@ -123,21 +123,21 @@ Exploratory
             Input
                 ../../Final/images
             Output 
-                ../model/vgg16_features.csv
-                ../model/vgg16_filenames.csv
-                ../model/model_vgg16.pkl
-                ../model/vgg16_pca_variance.png
-                ../model/vgg16_kmeans_inertia.png
-                ../model/vgg16_kmeans{n_clusters}.csv
-                ../model/vgg16_kmeans{n_clusters}_silhouette.png
-                ../model/vgg16_kmeans{n_cluster}_cluster{cluster}.png
+                ../model/vgg19_features.csv
+                ../model/vgg19_filenames.csv
+                ../model/model_vgg19.pkl
+                ../model/vgg19_pca_variance.png
+                ../model/vgg19_kmeans_inertia.png
+                ../model/vgg19_kmeans{n_clusters}.csv
+                ../model/vgg19_kmeans{n_clusters}_silhouette.png
+                ../model/vgg19_kmeans{n_cluster}_cluster{cluster}.png
     Labeling, visualizations and analysis 
         699 visualisations.ipynb 
             Input 
                 **** update ****
-                vgg19_pca.csv
-                triplicate_batch_images_labels_updated.csv
-                vgg19_kmeans_labels.csv
+                ../model/vgg19_pca_features.csv
+                ../data/triplicate_batch_images_labels_updated.csv
+                ../model/vgg19_kmeans_labels.csv
         Labels.ipynb 
             Input 
                 **** update ****
@@ -149,13 +149,10 @@ Exploratory
         VGG19 visualisations.ipynb 
                 **** update ****
             Input 
-                vgg19_kmeans20.csv
-                vgg19_kmeans30.csv
-                vgg19_kmeans40.csv
-                vgg19_kmeans50.csv                
-                /home/freemal4/Capstone/VGG19/vgg19_pca_features.csv'
+                ../model/vgg19_kmeans{n_clusters}.csv               
+                ../model/vgg19_pca_features.csv
             Output 
-                kmeans{n_clusters}_ratings_clusters_3D.pngkmeans{n_clusters}_ratings_clusters_3D.png
+                ../model/kmeans{n_clusters}_ratings_clusters_3D.pngkmeans{n_clusters}_ratings_clusters_3D.png
     Supervised learning 
         GDSC_triplicate_batch_Supervised_ML_RKD.ipynb 
             Input 
@@ -167,7 +164,7 @@ Exploratory
             Output 
         Random Forest.ipynb 
             Input 
-                ../../Final/ analysis/triplicate_batch_{model_name}_kmeans{n_clusters}_labels.csv 
+                ../../Final/analysis/triplicate_batch_{model_name}_kmeans{n_clusters}_labels.csv 
             Output 
                 ../supervised/RF_Xscaled_confusion.png 
                 ../supervised/RF_confusion.png 
