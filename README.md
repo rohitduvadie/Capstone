@@ -60,7 +60,7 @@ Further exploratory notebooks can be found in the Exploratory folder.
     * image_generation.R
       * Images of curves made using dr4pl package in R
   * Model generation
-    * 699_Images3_VGG16.ipynb
+    * Exploratory unsupervised models.ipynb
       * Generate clusters with VGG16, PCA, and KMeans clustering using dr4pl images
     * Capstone_deep_learning_curves_images_RKD.ipynb
       * Generate clusters with VGG16, PCA, and KMeans clustering using simplydrug images
