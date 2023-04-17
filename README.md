@@ -50,7 +50,7 @@ Additional notebooks can be found in the Exploratory folder. These include explo
 * Exploratory notebooks
   * Data collection and processing
     * Capstone triplicates playground.ipynb
-      * Data import and processing, curve generation in python
+      * Data import, dataset visualisations and processing, curve generation in python
     * Data processing - triplicates.ipynb
       * Data import and processing
   * Image generation
