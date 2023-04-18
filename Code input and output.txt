@@ -117,6 +117,7 @@ Exploratory
                 ../model/vgg19_filenames.csv
                 ../model/model_vgg19.pkl
                 ../model/vgg19_pca_variance.png
+                ../model/vgg19_pca_features.csv
                 ../model/vgg19_kmeans_inertia.png
                 ../model/vgg19_kmeans{n_clusters}.csv
                 ../model/vgg19_kmeans{n_clusters}_silhouette.png
@@ -125,7 +126,7 @@ Exploratory
         699 visualisations.ipynb 
             Input 
                 ../model/vgg19_pca_features.csv
-                ../data/triplicate_batch_images_labels_updated.csv
+                ../analysis/triplicate_batch_images_labels_updated.csv
                 ../model/vgg19_kmeans40.csv
         Labels.ipynb 
             Input 
