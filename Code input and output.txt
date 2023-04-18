@@ -148,7 +148,7 @@ Exploratory
                 ../../Final/model/VGG19_kmeans40.csv
                 ../../Final/analysis/VGG19_kmeans40_ratings.csv
             Output 
-                ../analysis/triplicate_batch_images_labels_updated.csv
+                triplicate_batch_images_labels_updated.csv
                 tree.svg
         GDSC_triplicate_batch_Supervised_ML_RKD_Updated.ipynb 
             Input 
@@ -156,7 +156,7 @@ Exploratory
                 ../../Final/model/VGG19_kmeans40.csv
                 ../../Final/analysis/VGG19_kmeans40_ratings.csv
             Output 
-                ../analysis/triplicate_batch_images_labels_updated.csv
+                triplicate_batch_images_labels_updated.csv
                 tree.svg
         Random Forest.ipynb 
             Input 
