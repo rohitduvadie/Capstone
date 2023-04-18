@@ -61,4 +61,4 @@ for(plate in unique(gdsc_trip$DRUGSET_ID)){
 }
 
 # save the dataframe as csv
-write.csv(gdsc_df, 'exploratory/data/triplicate_images.csv', row.names=FALSE)
+write.csv(gdsc_df, '../data/triplicate_batch_images.csv', row.names=FALSE)
