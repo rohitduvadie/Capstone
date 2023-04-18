@@ -68,7 +68,6 @@ Final
 Exploratory 
     Data collection and processing 
         Capstone triplicates playground.ipynb
-            **** update ****
         Data processing – triplicates.ipynb 
             Output 
                 ../data/gdsc.csv 
@@ -79,11 +78,10 @@ Exploratory
     Image generation 
         Capstone_GDSC_Normalized_Curves_silmplydrug_RKD.ipynb 
             Input
-                **** update ****
                 ../data/gdsc_triplicates.csv
             Output
-                ../images_python/gdsc_nomalized_curve_fit_output/{name}_GDSC_fit.png
-                ../data/gdsc_nomalized_curve_fit_output/fitTable.csv
+                gdsc_nomalized_curve_fit_output/{name}_GDSC_fit.png
+                gdsc_nomalized_curve_fit_output/fitTable.csv
         image_generation.R 
             Input 
                 ../data/gdsc_triplicates.csv 
@@ -91,21 +89,14 @@ Exploratory
                 ../images/image_{n}.jpg 
                 ../data/triplicate_images.csv  
     Model generation 
-        699_Images3_VGG16.ipynb 
-            Input 
-                **** update ****
-                ../images/image_{n}.jpg 
-            Output 
-                **** update ****
-                ../model/VGG16_filenames_file.csv
-                ../model/VGG16_features_file.csv
         Capstone_deep_learning_curves_images_RKD.ipynb 
             Input 
-                **** update ****
-                ../images_python/gdsc_nomalized_curve_fit_output/{name}_GDSC_fit.png
+                ../Image generation/gdsc_nomalized_curve_fit_output/{name}_GDSC_fit.png
             Output 
-                **** udpate ****
-                ../images_python/gdsc_normalized_curve_fit_images.pkl
+                gdsc_nomalized_curve_fit_images _5305_RKD_features.pkl
+        Exploratory unsupervised models.ipynb 
+            Input 
+                ../images 
         Unsupervised image classifier functions, pca and kmeans clustering code.ipynb 
         VGG16_notebook.ipynb 
             Input
@@ -135,38 +126,44 @@ Exploratory
     Labeling, visualizations and analysis 
         699 visualisations.ipynb 
             Input 
-                **** update ****
                 ../model/vgg19_pca_features.csv
                 ../data/triplicate_batch_images_labels_updated.csv
-                ../model/vgg19_kmeans_labels.csv
+                ../model/vgg19_kmeans40.csv
         Labels.ipynb 
             Input 
-                **** update ****
-                ../../Final/analysis/VGG19_kmeans40_ratings.csv
+                ../../Final/model/VGG19_kmeans40_ratings.csv
                 ../../Final/data/triplicate_batch_images.csv
             Output 
-                **** update ****
                 ../analysis/triplicate_batch_images_labels_updated.csv                
         VGG19 visualisations.ipynb 
-                **** update ****
             Input 
                 ../model/vgg19_kmeans{n_clusters}.csv               
                 ../model/vgg19_pca_features.csv
             Output 
-                ../model/kmeans{n_clusters}_ratings_clusters_3D.pngkmeans{n_clusters}_ratings_clusters_3D.png
+                ../model/kmeans{n_clusters}_ratings_clusters_2D.png
+                ../model/kmeans{n_clusters}_ratings_clusters_3D.png
     Supervised learning 
         GDSC_triplicate_batch_Supervised_ML_RKD.ipynb 
             Input 
-                ../analysis/triplicate_batch_images_labels_updated.csv
+                ../data/triplicate_batch_images.csv
+                ../../Final/model/VGG19_kmeans40.csv
+                ../../Final/analysis/VGG19_kmeans40_ratings.csv
             Output 
+                ../analysis/triplicate_batch_images_labels_updated.csv
+                tree.svg
         GDSC_triplicate_batch_Supervised_ML_RKD_Updated.ipynb 
             Input 
-                ../analysis/triplicate_batch_images_labels_updated.csv
+                ../data/triplicate_batch_images.csv
+                ../../Final/model/VGG19_kmeans40.csv
+                ../../Final/analysis/VGG19_kmeans40_ratings.csv
             Output 
+                ../analysis/triplicate_batch_images_labels_updated.csv
+                tree.svg
         Random Forest.ipynb 
             Input 
-                ../../Final/analysis/triplicate_batch_{model_name}_kmeans{n_clusters}_labels.csv 
+                ../../Final/analysis/triplicate_batch_VGG19_kmeans40_labels.csv 
             Output 
+                ../analysis/triplicate_batch_VGG19_kmeans40_labels_updated.csv
                 ../supervised/RF_Xscaled_confusion.png 
                 ../supervised/RF_confusion.png 
                 ../supervised/RF_Xscaled_features.png 
