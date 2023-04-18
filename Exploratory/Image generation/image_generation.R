@@ -42,7 +42,7 @@ for(plate in unique(gdsc_trip$DRUGSET_ID)){
         
         # create a unique file name and path for image
         image_name <- paste("image_", n, ".jpg", sep = "")
-        file_path <- file.path("exploratory/curve_images", image_name)
+        file_path <- file.path("../images", image_name)
         
         # save data to dataframe
         gdsc_df[nrow(gdsc_df)+1,] <- list(cell, drug, min_conc, max_conc, min_norm_intensity, max_norm_intensity, mean_sd, convergence, upper_limit, IC50, slope, lower_limit, file_path, image_name)
