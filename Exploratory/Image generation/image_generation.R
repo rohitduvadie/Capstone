@@ -3,11 +3,11 @@ library(dr4pl)
 library(ggplot2)
 
 # read in the raw data file
-gdsc_trip <- read.csv('exploratory/data/gdsc_triplicates.csv')
+gdsc_trip <- read.csv('../data/gdsc_triplicates.csv')
 
 # make directories if necessary
-if (!dir.exists('exploratory/curve_images')) {dir.create('exploratory/curve_images')}
-if (!dir.exists('exploratory/data')) {dir.create('exploratory/data')}
+if (!dir.exists('../images')) {dir.create('../images')}
+if (!dir.exists('../data')) {dir.create('../data')}
 
 # initialize n to count images
 n = 0
