@@ -3,7 +3,7 @@ library(dr4pl)
 library(ggplot2)
 
 # check if /images and /data exist and if not, create them
-if (!dir.exists('curve_images')) {dir.create(file.path(getwd(),'curve_images'))}
+if (!dir.exists('images')) {dir.create(file.path(getwd(),'images'))}
 if (!dir.exists('data')) {dir.create(file.path(getwd(),'data'))}
 
 # read in the data
@@ -50,7 +50,7 @@ for(plate in unique(triplicates_df$DRUGSET_ID)){
                 # create a unique file name and path for image
                 name <- paste(df7$CELL_ID[1], df7$DRUG_ID[1], df7$DRUGSET_ID[1], df7$ASSAY[1], df7$SEEDING_DENSITY[1], df7$DURATION[1], df7$batch[1], sep = '_')
                 image_name <- paste(name, '.png', sep='')
-                file_path <- file.path("curve_images", image_name)
+                file_path <- file.path("images", image_name)
               
                 # save data to dataframe
                 gdsc_df[nrow(gdsc_df)+1,] <- list(cell, drug, min_conc, max_conc, min_norm_intensity, 
