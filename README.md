@@ -34,7 +34,7 @@ Additional notebooks can be found in the Exploratory folder. These include explo
 * Code input and output.txt
 * Reports
   * Final presentation.pptx
-* Final code
+* Final - final version of code
   * Data collection.ipynb
     * Import data from GDSC website
   * Data processing.ipynb
@@ -47,7 +47,7 @@ Additional notebooks can be found in the Exploratory folder. These include explo
     * Analyze clusters and manually label
   * Supervised learning.ipynb
     * Train supervised model to predict curve label
-* Exploratory notebooks
+* Exploratory - exploratory notebooks
   * Data collection and processing
     * Capstone triplicates playground.ipynb
       * Data import, dataset visualisations and processing, curve generation in python
