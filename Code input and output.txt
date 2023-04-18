@@ -21,9 +21,9 @@ Final
                     INTENSITY 
                 Must be at least in triplicates 
         Output 
-                data/replicates.csv 
-                data/replicates_normalized.csv 
-                data/triplicates_normalized.csv 
+            data/replicates.csv 
+            data/replicates_normalized.csv 
+            data/triplicates_normalized.csv 
     Image_generation.R 
         Input 
             data/triplicates_normalized.csv 
@@ -47,11 +47,9 @@ Final
         Input 
             User generated ratings dictionary 
                 dict = {cluster_number:’rating’, cluster_number:’rating’, …} 
-            **** update ****
-            data/triplicates_batch_images.csv  
+            data/triplicate_batch_images.csv  
             model/{model_name}_kmeans{n_clusters}.csv 
             model/{model_name}_pca_features.csv 
-            data/images_list.csv 
         Output 
             analysis/{model_name}_kmeans{n_clusters}_ratings_clusters_2D.png 
             analysis/{model_name}_kmeans{n_clusters}_ratings_clusters_3D.png 
