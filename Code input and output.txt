@@ -85,7 +85,7 @@ Exploratory
                 ../data/gdsc_triplicates.csv 
             Output 
                 ../images/image_{n}.jpg 
-                ../data/triplicate_images.csv  
+                ../data/triplicate_batch_images.csv  
     Model generation 
         Capstone_deep_learning_curves_images_RKD.ipynb 
             Input 
