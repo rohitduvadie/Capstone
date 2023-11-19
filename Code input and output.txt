@@ -1,0 +1,170 @@
+** List of input and output for each python notebook or R script **
+
+Final 
+    Data collection.ipynb 
+        Output 
+            data/gdsc.csv 
+    Data processing.ipynb 
+        Input 
+            data/gdsc.csv 
+        Alternate input 
+            If using something other than data/gdsc.csv: 
+                Required columns 
+                    DRUGSET_ID 
+                    CELL_ID 
+                    DRUG_ID 
+                    TAG 
+                    ASSAY
+                    DURATION 
+                    SEEDING_DENSITY 
+                    CONC 
+                    INTENSITY 
+                Must be at least in triplicates 
+        Output 
+            data/replicates.csv 
+            data/replicates_normalized.csv 
+            data/triplicates_normalized.csv 
+    Image_generation.R 
+        Input 
+            data/triplicates_normalized.csv 
+        Output 
+            images/{CELL_ID}_{DRUG_ID}_{DRUGSET_ID}_{ASSAY}_{SEEDING_DENSITY}_{DURATION}_{batch}.png 
+            data/triplicates_batch_images.csv 
+    Model generation.ipynb 
+        Input 
+            images/{CELL_ID}_{DRUG_ID}_{DRUGSET_ID}_{ASSAY}_{SEEDING_DENSITY}_{DURATION}_{batch}.png 
+        Output 
+            data/images_list.csv  
+            model/{model_name}_model.pkl 
+            model/{model_name}_features.csv 
+            model/{model_name}_pca_features.csv 
+            model/{model_name}_kmeans_inertia.png 
+            model/{model_name}_kmeans{n_clusters}.csv 
+            model/{model_name}_kmeans{n_clusters}_silhouette.png 
+            model/{model_name}_kmeans{n_cluster}_cluster{cluster}.png 
+            model/{model_name}_kmeans{n_cluster}_ratings.csv 
+    Labeling, visualizations, and analysis.ipynb 
+        Input 
+            User generated ratings dictionary 
+                dict = {cluster_number:’rating’, cluster_number:’rating’, …} 
+            data/triplicate_batch_images.csv  
+            model/{model_name}_kmeans{n_clusters}.csv 
+            model/{model_name}_pca_features.csv 
+        Output 
+            analysis/{model_name}_kmeans{n_clusters}_ratings_clusters_2D.png 
+            analysis/{model_name}_kmeans{n_clusters}_ratings_clusters_3D.png 
+            analysis/{model_name}_kmeans{n_clusters}_ratings.csv 
+            analysis/triplicate_batch_{model_name}_kmeans{n_clusters}_labels.csv 
+    Supervised learning.ipynb 
+        Input 
+            analysis/triplicate_batch_{model_name}_kmeans{n_clusters}_labels.csv 
+        Output 
+            supervised/{model_name}_confusion_matrix.png 
+            supervised/{model_name}_features.png 
+            supervised/{model_name}.pkl 
+
+Exploratory 
+    Data collection and processing 
+        Capstone triplicates playground.ipynb
+        Data processing – triplicates.ipynb 
+            Output 
+                ../data/gdsc.csv 
+                ../data/gdsc_replicates.csv 
+                ../data/gdsc_normalized.csv 
+                ../data/gdsc_triplicates.csv 
+                ../data/all_triplicates.csv 
+    Image generation 
+        Capstone_GDSC_Normalized_Curves_silmplydrug_RKD.ipynb 
+            Input
+                ../data/gdsc_triplicates.csv
+            Output
+                gdsc_nomalized_curve_fit_output/{name}_GDSC_fit.png
+                gdsc_nomalized_curve_fit_output/fitTable.csv
+        image_generation.R 
+            Input 
+                ../data/gdsc_triplicates.csv 
+            Output 
+                ../images/image_{n}.jpg 
+                ../data/triplicate_batch_images.csv  
+    Model generation 
+        Capstone_deep_learning_curves_images_RKD.ipynb 
+            Input 
+                ../Image generation/gdsc_nomalized_curve_fit_output/{name}_GDSC_fit.png
+            Output 
+                gdsc_nomalized_curve_fit_images _5305_RKD_features.pkl
+        Exploratory unsupervised models.ipynb 
+            Input 
+                ../images 
+        Unsupervised image classifier functions, pca and kmeans clustering code.ipynb 
+        VGG16_notebook.ipynb 
+            Input
+                ../../Final/images
+            Output 
+                ../model/vgg16_features.csv
+                ../model/vgg16_filenames.csv
+                ../model/model_vgg16.pkl
+                ../model/vgg16_pca_variance.png
+                ../model/vgg16_kmeans_inertia.png
+                ../model/vgg16_kmeans{n_clusters}_v1.csv
+                ../model/vgg16_kmeans{n_clusters}_v2.csv
+                ../model/vgg16_kmeans{n_clusters}_silhouette.png
+                ../model/vgg16_kmeans{n_cluster}_cluster{cluster}.png
+        VGG19_notebook.ipynb 
+            Input
+                ../../Final/images
+            Output 
+                ../model/vgg19_features.csv
+                ../model/vgg19_filenames.csv
+                ../model/model_vgg19.pkl
+                ../model/vgg19_pca_variance.png
+                ../model/vgg19_pca_features.csv
+                ../model/vgg19_kmeans_inertia.png
+                ../model/vgg19_kmeans{n_clusters}.csv
+                ../model/vgg19_kmeans{n_clusters}_silhouette.png
+                ../model/vgg19_kmeans{n_cluster}_cluster{cluster}.png
+    Labeling, visualizations and analysis 
+        699 visualisations.ipynb 
+            Input 
+                ../model/vgg19_pca_features.csv
+                ../analysis/triplicate_batch_images_labels_updated.csv
+                ../model/vgg19_kmeans40.csv
+        Labels.ipynb 
+            Input 
+                ../../Final/model/VGG19_kmeans40_ratings.csv
+                ../../Final/data/triplicate_batch_images.csv
+            Output 
+                ../analysis/triplicate_batch_images_labels_updated.csv                
+        VGG19 visualisations.ipynb 
+            Input 
+                ../model/vgg19_kmeans{n_clusters}.csv               
+                ../model/vgg19_pca_features.csv
+            Output 
+                ../model/kmeans{n_clusters}_ratings_clusters_2D.png
+                ../model/kmeans{n_clusters}_ratings_clusters_3D.png
+    Supervised learning 
+        GDSC_triplicate_batch_Supervised_ML_RKD.ipynb 
+            Input 
+                ../data/triplicate_batch_images.csv
+                ../../Final/model/VGG19_kmeans40.csv
+                ../../Final/analysis/VGG19_kmeans40_ratings.csv
+            Output 
+                triplicate_batch_images_labels_updated.csv
+                tree.svg
+        GDSC_triplicate_batch_Supervised_ML_RKD_Updated.ipynb 
+            Input 
+                ../data/triplicate_batch_images.csv
+                ../../Final/model/VGG19_kmeans40.csv
+                ../../Final/analysis/VGG19_kmeans40_ratings.csv
+            Output 
+                triplicate_batch_images_labels_updated.csv
+                tree.svg
+        Random Forest.ipynb 
+            Input 
+                ../../Final/analysis/triplicate_batch_VGG19_kmeans40_labels.csv 
+            Output 
+                ../analysis/triplicate_batch_VGG19_kmeans40_labels_updated.csv
+                ../supervised/RF_Xscaled_confusion.png 
+                ../supervised/RF_confusion.png 
+                ../supervised/RF_Xscaled_features.png 
+                ../supervised/RF_features.png 
+                ../supervised/RF.pkl 
